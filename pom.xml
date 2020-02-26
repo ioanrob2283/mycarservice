@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.ri.carproject</groupId>
 	<artifactId>mycarservice</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>mycarservice</name>
 	<description>Car demo project for Spring Boot</description>
 
