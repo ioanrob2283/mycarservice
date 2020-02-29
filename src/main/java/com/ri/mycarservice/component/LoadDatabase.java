@@ -1,7 +1,7 @@
 package com.ri.mycarservice.component;
 
 import com.ri.mycarservice.model.Car;
-import com.ri.mycarservice.repository.CarRepository;
+import com.ri.mycarservice.repository.CarListRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class LoadDatabase implements ApplicationRunner {
 
     @Autowired
-    private CarRepository repository;
+    private CarListRepository repository;
 
     @Override
     public void run(ApplicationArguments applicationArguments) {

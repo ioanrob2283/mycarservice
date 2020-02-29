@@ -1,7 +1,7 @@
 package com.ri.mycarservice.controllers;
 
 import com.ri.mycarservice.model.Car;
-import com.ri.mycarservice.repository.CarMakeList;
+import com.ri.mycarservice.repository.CarList;
 import com.ri.mycarservice.service.MyCarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,18 +17,10 @@ public class MyCarServiceController {
     @Autowired
     private MyCarService myCarService;
 
-/*
-    // Get carlist with all fields
-    @RequestMapping(value = "/carlist", method = RequestMethod.GET)
-    public List<Car> getCarList() {
-        return myCarService.getCarList();
-    }
-*/
-
     // Get the carlist only with make field and id
     @RequestMapping(value = "/carlist", method = RequestMethod.GET)
-    public List<CarMakeList> getCarMakeList() {
-        return myCarService.getCarMakeList();
+    public List<CarList> getCarMakeList() {
+        return myCarService.getCarList();
     }
 
     // Get car details based on a id

@@ -1,12 +1,11 @@
 package com.ri.mycarservice.service;
 
 import com.ri.mycarservice.model.Car;
-import com.ri.mycarservice.repository.CarMakeList;
+import com.ri.mycarservice.repository.CarList;
 
 import java.util.List;
 
 public interface MyCarService {
-    List<Car> getCarList();
-    List<CarMakeList> getCarMakeList();
+    List<CarList> getCarList();
     Car getCarDetailsById(Long id);
 }
